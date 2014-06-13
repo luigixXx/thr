@@ -1,0 +1,75 @@
+@import url('bootstrap.min.css');
+@font-face {
+	font-family: myriadpro;
+	src: url("font/MYRIADPRO-REGULAR.OTF") format("opentype");
+}
+
+@font-face {
+	font-family: myriadpro;
+	font-weight: bold;
+	src: url("font/MYRIADPRO-BOLD.OTF") format("opentype");
+}
+html, body {
+	font-family: myriadpro;
+	color: white;
+}
+body{
+	background-color: #888;
+	background-image: url(../img/fond_ext.png)
+}
+.ctn{
+	background-color: #FFFFFF;
+	min-height: 750px;
+}
+.topbar {
+	background-color:rgb(35,105,11);
+	height: 12%;
+	
+}
+
+.footbar {
+	background-color:rgb(35,105,11);
+	
+}
+
+.leftbar {
+	background: url(../img/left.png);
+	height: 88%;
+	background-repeat: repeat-y;
+	background-size: contain;
+}
+
+.shad {
+	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+.carousel.carousel-fade .item {
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+	opacity:0;
+}
+
+.carousel.carousel-fade .active.item {
+	opacity:1;
+}
+
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.carousel.carousel-fade .next,
+.carousel.carousel-fade .prev {
+	left: 0;
+	z-index: 1;
+}
+
+.carousel.carousel-fade .carousel-control {
+	z-index: 3;
+}

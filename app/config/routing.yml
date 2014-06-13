@@ -1,0 +1,4 @@
+dev_main:
+    resource: "@DEVMainBundle/Resources/config/routing.yml"
+    prefix:   /
+

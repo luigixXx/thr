@@ -1,0 +1,7 @@
+dev_main_homepage:
+    pattern:  /
+    defaults: { _controller: DEVMainBundle:Main:index }
+
+dev_main_scoutismepage:
+    pattern:  /scoutisme
+    defaults: { _controller: DEVMainBundle:Main:scoutisme }
