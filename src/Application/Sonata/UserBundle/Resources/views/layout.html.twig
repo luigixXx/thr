@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>{% block title %}Apps - {% endblock %}</title>
+		{% block stylesheets %}
+		<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css" />
+		<link rel="stylesheet" href="{{ asset('css/main.css') }}" type="text/css" />
+		{% endblock %}
+		<script src="{{ asset('js/jquery-1.9.1.js') }}"></script>
+		<script src="{{ asset('js/jquery-ui-1.10.3.custom.min.js') }}"></script>
+		<script src="{{ asset('js/jquery.ui.touch-punch.min.js') }}"></script>
+		<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+		<script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+	</head>
+	<body>
+		
+		<div class="row-fluid" style="margin-top: 30px;">
+			<div>
+			{% block fos_user_content %}
+
+			{% endblock %}
+			</div>
+		</div>
+	</body>
+
+</html>

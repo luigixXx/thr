@@ -18,7 +18,14 @@
         "sensio/distribution-bundle": "~2.3",
         "sensio/framework-extra-bundle": "~3.0",
         "sensio/generator-bundle": "~2.3",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+        "sonata-project/admin-bundle": "dev-master",
+        "friendsofsymfony/user-bundle": "1.3.x-dev",
+        "sonata-project/user-bundle": "dev-master",
+        "sonata-project/doctrine-orm-admin-bundle": "dev-master",
+        "sonata-project/core-bundle": "~2.2@dev",
+        "friendsofsymfony/jsrouting-bundle": "~1.1",
+        "sonata-project/datagrid-bundle" : "~2.2@dev"
     },
     "scripts": {
         "post-install-cmd": [

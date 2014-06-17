@@ -1,0 +1,27 @@
+{% extends "DEVMainBundle::layout.html.twig" %}
+{% block title%}{{ parent() }} Profile{% endblock%}
+{%block body%}
+<h4>{% block sonata_profile_title %}{% trans from 'SonataUserBundle' %}sonata_profile_title{% endtrans %}{% endblock %}</h4>
+<link rel="stylesheet" href="http://bootswatch.com/united/bootstrap.min.css">
+<div class="sonata-user-show">
+
+	<div class="span2" style="padding: 8px 0;">
+		{% block sonata_profile_menu %}
+		{{ sonata_block_render({'type': 'sonata.user.block.menu'}, {'current_uri': app.request.requestUri}) }}
+
+		{% endblock %}
+	</div>
+
+	<div class="span5 well">
+		{% for message in app.session.flashbag.get('fos_user_success') %}
+		<div class="alert alert-success">
+			{{ message|trans({}, "SonataUserBundle") }}
+		</div>
+		{% endfor %}
+
+		{% block sonata_profile_content %}
+		{% endblock %}
+	</div>
+
+</div>
+{% endblock %}
