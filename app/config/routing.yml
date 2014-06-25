@@ -1,3 +1,7 @@
+dev_editor:
+    resource: "@DEVEditorBundle/Resources/config/routing.yml"
+    prefix:   /
+
 dev_chef:
     resource: "@DEVChefBundle/Resources/config/routing.yml"
     prefix:   /

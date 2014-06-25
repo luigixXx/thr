@@ -1,0 +1,72 @@
+<div class="col-md-2" style="border-right: 2px solid #23690B;">
+
+	<ul class="nav nav-pills nav-stacked well-sm" id="menu" style="background-color:">
+		<li>
+			<a href="{{path('dev_editor_homepage')}}">Accueil edition</a>
+		</li>
+		<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="/cars/">Actualités<b class="caret"></b></a>
+			<ul class="dropdown-menu">
+				<li>
+					<a href="{{path('dev_editor_add_news')}}">Ajouter</a>
+				</li>
+				<li>
+					<a href="#">Gérer</a>
+				</li>
+				
+			</ul>
+		</li>
+		<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="/cars/">Articles<b class="caret"></b></a>
+			<ul class="dropdown-menu">
+				<li>
+					<a href="#">Ajouter</a>
+				</li>
+				<li>
+					<a href="#">Gérer</a>
+				</li>
+				
+			</ul>
+		</li>
+		<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="/cars/">Documents<b class="caret"></b></a>
+			<ul class="dropdown-menu">
+				<li>
+					<a href="#">Ajouter</a>
+				</li>
+				<li>
+					<a href="#">Gérer</a>
+				</li>
+				
+			</ul>
+		</li>
+		<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="/cars/">Images/Vidéos<b class="caret"></b></a>
+			<ul class="dropdown-menu">
+				<li>
+					<a href="#">Ajouter</a>
+				</li>
+				<li>
+					<a href="#">Gérer</a>
+				</li>
+				
+			</ul>
+		</li>
+		<li>
+			<a href="#">Activités</a>
+		</li>
+		<li>
+			<a href="#">Agenda</a>
+		</li>
+	</ul>
+</div>
+<script>
+	var url = window.location;
+	// Will only work if string in href matches with location
+	$('ul.nav a[href="' + url + '"]').parent().addClass('active');
+
+	// Will also work for relative and absolute hrefs
+	$('ul.nav a').filter(function() {
+		return this.href == url;
+	}).parent().addClass('active'); 
+</script>

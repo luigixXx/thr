@@ -27,6 +27,8 @@ class AppKernel extends Kernel
         	new Sonata\CoreBundle\SonataCoreBundle(),
             new DEV\MainBundle\DEVMainBundle(),
             new DEV\ChefBundle\DEVChefBundle(),
+            new DEV\EditorBundle\DEVEditorBundle(),
+            new Stfalcon\Bundle\TinymceBundle\StfalconTinymceBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

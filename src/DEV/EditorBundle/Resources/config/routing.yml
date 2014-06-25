@@ -1,0 +1,7 @@
+dev_editor_homepage:
+    path:     /editor
+    defaults: { _controller: DEVEditorBundle:Editor:index }
+
+dev_editor_add_news:
+    path:     /editor/add/actu
+    defaults: { _controller: DEVEditorBundle:Editor:addActu }

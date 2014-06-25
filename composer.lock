@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d697118cddeab4ed232187c47a184fef",
+    "hash": "b87831648d16e39b6fb41ff5b73435b5",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1466,17 +1466,17 @@
         },
         {
             "name": "nelmio/api-doc-bundle",
-            "version": "2.5.2",
+            "version": "2.6.0",
             "target-dir": "Nelmio/ApiDocBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "fa920111260e350ea17942c77c811762e965cbdc"
+                "reference": "b48650a9e020d43ec5a3c0f4345714ef724344d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/fa920111260e350ea17942c77c811762e965cbdc",
-                "reference": "fa920111260e350ea17942c77c811762e965cbdc",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/b48650a9e020d43ec5a3c0f4345714ef724344d7",
+                "reference": "b48650a9e020d43ec5a3c0f4345714ef724344d7",
                 "shasum": ""
             },
             "require": {
@@ -1537,7 +1537,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-05-16 09:33:58"
+            "time": "2014-06-25 06:52:01"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -1837,12 +1837,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "83d22c0483e0979d6962a45e9f183ff44e54daaf"
+                "reference": "6f89ad785a31f07d2c4f8d27258a7bb6e9904960"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/83d22c0483e0979d6962a45e9f183ff44e54daaf",
-                "reference": "83d22c0483e0979d6962a45e9f183ff44e54daaf",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/6f89ad785a31f07d2c4f8d27258a7bb6e9904960",
+                "reference": "6f89ad785a31f07d2c4f8d27258a7bb6e9904960",
                 "shasum": ""
             },
             "require": {
@@ -1908,7 +1908,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2014-06-24 13:55:57"
+            "time": "2014-06-25 12:08:54"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -2501,6 +2501,64 @@
                 "user"
             ],
             "time": "2014-06-18 09:56:30"
+        },
+        {
+            "name": "stfalcon/tinymce-bundle",
+            "version": "dev-master",
+            "target-dir": "Stfalcon/Bundle/TinymceBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stfalcon/TinymceBundle.git",
+                "reference": "d686b5de27d7dfcee81cf8527931d5ace5390141"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stfalcon/TinymceBundle/zipball/d686b5de27d7dfcee81cf8527931d5ace5390141",
+                "reference": "d686b5de27d7dfcee81cf8527931d5ace5390141",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/symfony": ">=2.1"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Stfalcon\\Bundle\\TinymceBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stepan Tanasiychuk",
+                    "email": "ceo@stfalcon.com",
+                    "homepage": "http://blog.stfalcon.com"
+                },
+                {
+                    "name": "Igor Negrutsa",
+                    "email": "progi2007@gmail.com",
+                    "homepage": "http://igor-negrutsa.info"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://github.com/stfalcon/TinymceBundle/contributors"
+                }
+            ],
+            "description": "This Bundle integrates TinyMCE WYSIWYG editor into a Symfony2 project.",
+            "keywords": [
+                "editor",
+                "tinymce",
+                "wysiwyg"
+            ],
+            "time": "2014-06-15 07:33:43"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3112,7 +3170,8 @@
         "sonata-project/user-bundle": 20,
         "sonata-project/doctrine-orm-admin-bundle": 20,
         "sonata-project/core-bundle": 20,
-        "sonata-project/datagrid-bundle": 20
+        "sonata-project/datagrid-bundle": 20,
+        "stfalcon/tinymce-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
