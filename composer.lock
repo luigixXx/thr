@@ -1783,17 +1783,17 @@
         },
         {
             "name": "sensio/generator-bundle",
-            "version": "v2.3.4",
+            "version": "v2.3.5",
             "target-dir": "Sensio/Bundle/GeneratorBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "4a7b126e9c22f858e3584b19ddce6e5bdd7677ee"
+                "reference": "8b7a33aa3d22388443b6de0b0cf184122e9f60d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/4a7b126e9c22f858e3584b19ddce6e5bdd7677ee",
-                "reference": "4a7b126e9c22f858e3584b19ddce6e5bdd7677ee",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/8b7a33aa3d22388443b6de0b0cf184122e9f60d2",
+                "reference": "8b7a33aa3d22388443b6de0b0cf184122e9f60d2",
                 "shasum": ""
             },
             "require": {
@@ -1829,7 +1829,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2013-08-21 18:09:35"
+            "time": "2014-04-28 14:01:06"
         },
         {
             "name": "sonata-project/admin-bundle",
@@ -1837,12 +1837,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "f3e49a32cdb354667b0693f1d893e96d80c69526"
+                "reference": "83d22c0483e0979d6962a45e9f183ff44e54daaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/f3e49a32cdb354667b0693f1d893e96d80c69526",
-                "reference": "f3e49a32cdb354667b0693f1d893e96d80c69526",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/83d22c0483e0979d6962a45e9f183ff44e54daaf",
+                "reference": "83d22c0483e0979d6962a45e9f183ff44e54daaf",
                 "shasum": ""
             },
             "require": {
@@ -1908,7 +1908,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2014-06-12 09:47:42"
+            "time": "2014-06-24 13:55:57"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -2040,12 +2040,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
-                "reference": "9c2fc7ed49077024a258419e22d911d255274f4d"
+                "reference": "fdeb39d81d31f377b49e8bbfa2b72eb2d4ae1dcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/9c2fc7ed49077024a258419e22d911d255274f4d",
-                "reference": "9c2fc7ed49077024a258419e22d911d255274f4d",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/fdeb39d81d31f377b49e8bbfa2b72eb2d4ae1dcb",
+                "reference": "fdeb39d81d31f377b49e8bbfa2b72eb2d4ae1dcb",
                 "shasum": ""
             },
             "require": {
@@ -2095,7 +2095,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2014-06-10 10:25:31"
+            "time": "2014-06-14 13:33:31"
         },
         {
             "name": "sonata-project/datagrid-bundle",
@@ -2436,12 +2436,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataUserBundle.git",
-                "reference": "cf51088baea7f9d11d7e1a91f6eb4357717da93a"
+                "reference": "49769e79b4fcbeb1cb9b9f8582c8092c90d6e08d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/cf51088baea7f9d11d7e1a91f6eb4357717da93a",
-                "reference": "cf51088baea7f9d11d7e1a91f6eb4357717da93a",
+                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/49769e79b4fcbeb1cb9b9f8582c8092c90d6e08d",
+                "reference": "49769e79b4fcbeb1cb9b9f8582c8092c90d6e08d",
                 "shasum": ""
             },
             "require": {
@@ -2500,7 +2500,7 @@
                 "sonata",
                 "user"
             ],
-            "time": "2014-06-04 09:55:48"
+            "time": "2014-06-18 09:56:30"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3040,7 +3040,7 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com",
                     "homepage": "http://www.willdurand.fr"
                 }

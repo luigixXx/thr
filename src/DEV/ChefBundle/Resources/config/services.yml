@@ -1,0 +1,7 @@
+parameters:
+#    dev_chef.example.class: DEV\ChefBundle\Example
+
+services:
+#    dev_chef.example:
+#        class: %dev_chef.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

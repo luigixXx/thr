@@ -1,0 +1,3 @@
+dev_chef_homepage:
+    path:     /chef
+    defaults: { _controller: DEVChefBundle:Chef:index }

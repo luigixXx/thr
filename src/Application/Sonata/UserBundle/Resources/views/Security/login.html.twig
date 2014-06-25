@@ -2,7 +2,7 @@
 {% block title%}{{ parent() }} Connexion{% endblock%}
 {% block fos_user_content %}
 <div class="row-fluid">
-	<div class="offset4 span4 well text-center shad">
+	<div class="col-md-offset-4 col-md-4 well text-center shad">
 		{% if error %}
 		<div>
 			{{ error|trans({}, 'FOSUserBundle') }}

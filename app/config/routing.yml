@@ -1,3 +1,7 @@
+dev_chef:
+    resource: "@DEVChefBundle/Resources/config/routing.yml"
+    prefix:   /
+
 dev_main:
     resource: "@DEVMainBundle/Resources/config/routing.yml"
     prefix:   /

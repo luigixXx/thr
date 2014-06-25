@@ -11,7 +11,7 @@
 }
 html, body {
 	font-family: myriadpro;
-	color: white;
+	
 }
 body{
 	background-color: #888;
@@ -20,6 +20,9 @@ body{
 .ctn{
 	background-color: #FFFFFF;
 	min-height: 750px;
+}
+.headwhite{
+	color:white;
 }
 .topbar {
 	background-color:rgb(35,105,11);
