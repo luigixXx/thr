@@ -5,8 +5,8 @@
 {%block body%}
 
 <div class="well text-center">
-	<form method="post" {{ form_enctype(form) }} role="form">
-		<div class="form-group">
+	<form method="post" {{ form_enctype(form) }} role="form" class="form-horizontal">
+		<div class="control-group">
 		{{ form_widget(form) }}
 		</div>
 		<input type="submit" class="btn btn-primary" />

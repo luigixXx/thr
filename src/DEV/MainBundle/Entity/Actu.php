@@ -41,6 +41,13 @@ class Actu
      * @ORM\Column(name="enable", type="boolean")
      */
     private $enable;
+	
+	/**
+     * @var datetime
+     *
+     * @ORM\Column(name="datemod", type="datetime")
+     */
+    private $datemod;
 
 
     /**
@@ -120,5 +127,28 @@ class Actu
     public function getEnable()
     {
         return $this->enable;
+    }
+
+    /**
+     * Set datemod
+     *
+     * @param \DateTime $datemod
+     * @return Actu
+     */
+    public function setDatemod($datemod)
+    {
+        $this->datemod = $datemod;
+
+        return $this;
+    }
+
+    /**
+     * Get datemod
+     *
+     * @return \DateTime 
+     */
+    public function getDatemod()
+    {
+        return $this->datemod;
     }
 }

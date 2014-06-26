@@ -3,5 +3,13 @@ dev_editor_homepage:
     defaults: { _controller: DEVEditorBundle:Editor:index }
 
 dev_editor_add_news:
-    path:     /editor/add/actu
-    defaults: { _controller: DEVEditorBundle:Editor:addActu }
+    path:     /editor/add/actu/{id}
+    defaults: { _controller: DEVEditorBundle:Editor:addActu, id:0 }
+
+dev_editor_list_news:
+    path:     /editor/list/actu
+    defaults: { _controller: DEVEditorBundle:Editor:listActu }
+    
+dev_editor_suppr_news:
+    path:     /editor/suppr/actu/{id}
+    defaults: { _controller: DEVEditorBundle:Editor:delActu }

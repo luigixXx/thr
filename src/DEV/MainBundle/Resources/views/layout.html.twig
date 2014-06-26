@@ -12,10 +12,12 @@
 		<script src="{{ asset('js/jquery.ui.touch-punch.min.js') }}"></script>
 		<script src="{{ asset('js/bootstrap.min.js') }}"></script>
 		<script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+		<script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
 		<script src="{{ asset('js/highcharts/highcharts.js') }}"></script>
 		<script src="{{ asset('js/highcharts/exporting.js') }}"></script>
 		<script src="{{ asset('js/highcharts/grid.js') }}"></script>
 		<script src="{{ asset('js/jquery.mmenu.js')}}"></script>
+
 	</head>
 	<body>
 
@@ -30,7 +32,7 @@
 					{% endblock %}
 				</div>
 			</div>
-			
+
 		</div>
 		<div class="container">
 			{% include "DEVMainBundle:Static:footer.html.twig" %}

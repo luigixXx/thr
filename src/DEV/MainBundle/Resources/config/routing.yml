@@ -1,6 +1,8 @@
 dev_main_homepage:
     pattern:  /
     defaults: { _controller: DEVMainBundle:Main:index }
+    options:
+        expose:   true
 
 dev_main_scoutismepage:
     pattern:  /scoutisme

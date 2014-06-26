@@ -8,9 +8,14 @@
 		<legend>
 			Dernières Actualités
 		</legend>
-		<p>
-			test
-		</p>
+		<table class="table">
+			{%for actu in actus %}
+			<tr class="click">
+				<td>{{actu.titre}}</td>
+				<td>{{actu.datemod|date('d-m-Y')}}</td>
+			</tr>
+			{%endfor%}
+		</table>
 	</div>
 </div>
 <div class="col-md-4">
@@ -48,6 +53,5 @@
 	jQuery('.carousel').carousel({
 		interval : 5000
 	});
-
 </script>
 {%endblock%}

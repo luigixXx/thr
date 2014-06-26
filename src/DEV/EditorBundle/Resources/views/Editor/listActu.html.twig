@@ -1,0 +1,31 @@
+{% extends "DEVEditorBundle::layout.html.twig" %}
+
+{% block title%}{{ parent() }} Accueil{% endblock%}
+
+{%block body%}
+<div class="well text-center">
+	<legend>
+		Listes des actualités
+	</legend>
+	{% for flashMessage in app.session.flashbag.get('notice') %}
+	<div class="alert alert-success">
+		{{ flashMessage }}
+	</div>
+	{% endfor %}
+	<table class="table table-hover">
+		{%for actu in actus %}
+		<tr>
+			<td>{{actu.titre}}</td>
+			{%if actu.enable == 1%}
+			<td>Activée</td>
+			{%else%}
+			<td>Désactivée</td>
+			{%endif%}
+			<td>Modifié le {{actu.datemod|date('d-m-Y')}}</td>
+			<td><a href="{{path('dev_editor_add_news',{'id':actu.id})}}" class="btn btn-success"><i class="glyphicon glyphicon-pencil"></i> Editer</a></td>
+			<td><a href="{{path('dev_editor_suppr_news',{'id':actu.id})}}" class="btn btn-warning"><i class="glyphicon glyphicon-warning-sign"></i> Supprimer</a></td>
+		</tr>
+		{%endfor%}
+	</table>
+</div>
+{%endblock%}

@@ -76,3 +76,10 @@ body{
 .carousel.carousel-fade .carousel-control {
 	z-index: 3;
 }
+.click{
+	
+}
+.click:hover{
+	cursor: pointer;
+	background-color: rgba(35,105,11, 0.5);
+}

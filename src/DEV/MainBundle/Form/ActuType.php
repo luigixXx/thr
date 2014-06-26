@@ -17,7 +17,7 @@ class ActuType extends AbstractType
         $builder
             ->add('titre', 'text', array(
 								        'attr' => array(
-								         'class' => 'form_control'),'label'=>"Titre"
+								         'class' => 'controls'),'label'=>"Titre"
 								    ))
             ->add('content', 'textarea', array(
 								        'attr' => array(
@@ -25,7 +25,7 @@ class ActuType extends AbstractType
 								    ))
             ->add('enable', 'checkbox', array(
 								        'attr' => array(
-								         'class' => 'form_control'),'label'=>"Publier"
+								         'class' => 'form_control'),'label'=>"Publier",'required'    => false
 								    ))
         ;
     }
