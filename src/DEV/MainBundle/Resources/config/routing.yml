@@ -7,9 +7,23 @@ dev_main_homepage:
 dev_main_scoutismepage:
     pattern:  /scoutisme
     defaults: { _controller: DEVMainBundle:Main:scoutisme }
+
+dev_main_groupepage:
+    pattern:  /groupe
+    defaults: { _controller: DEVMainBundle:Main:groupe }
+    
+dev_main_techniquepage:
+    pattern:  /technique
+    defaults: { _controller: DEVMainBundle:Main:technique }
     
 dev_main_view_actu:
     pattern:  /view/actu/{id}
     defaults: { _controller: DEVMainBundle:Main:displayActu }
+    options:
+        expose:   true
+        
+dev_main_view_article:
+    pattern:  /view/article/{id}
+    defaults: { _controller: DEVMainBundle:Main:displayArticle }
     options:
         expose:   true

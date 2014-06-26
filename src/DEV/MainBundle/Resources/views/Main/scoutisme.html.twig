@@ -3,11 +3,35 @@
 {% block title%}{{ parent() }} Scoutisme{% endblock%}
 
 {%block body%}
-<div class="col-md-8" style="color: black">
-	<div class="well">
+<div class="col-md-8">
+	<div class="well-thr">
 		<legend>
 			Le Scoutisme
 		</legend>
+		<table class="table">
+			{%for article in articles%}
+			{%if article.categorie.nom == 'Scoutisme'%}
+			<tr class="click fcbox" href="{{path('dev_main_view_article',{'id':article.id})}}?iframe">
+				<td>{{article.titre}}</td>
+			</tr>
+			{%endif%}
+			{%endfor%}
+		</table>
 	</div>
 </div>
+<script>
+	$(".fcbox").fancybox({
+		'hideOnContentClick' : true,
+		'padding' : 0,
+		'overlayColor' : '#D3D3D3',
+		'transitionIn' : 'elastic',
+		'transitionOut' : 'elastic',
+		'overlayOpacity' : 0.7,
+		'zoomSpeedIn' : 300,
+		'zoomSpeedOut' : 300,
+		'width' : 950,
+		'height' : 600,
+		'type' : 'iframe'
+	}); 
+</script>
 {%endblock%}

@@ -81,5 +81,22 @@ body{
 }
 .click:hover{
 	cursor: pointer;
-	background-color: rgba(35,105,11, 0.5);
+	background-color: white;
+	color:rgb(35,105,11);
+}
+
+.well-thr{
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color:rgb(35,105,11);
+  color:#FFFFFF;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.well-thr legend{
+	color:white;
 }
