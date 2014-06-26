@@ -9,6 +9,10 @@ dev_editor_add_news:
 dev_editor_add_article:
     path:     /editor/add/article/{id}
     defaults: { _controller: DEVEditorBundle:Editor:addArticle, id:0 }
+    
+dev_editor_add_doc:
+    path:     /editor/add/doc
+    defaults: { _controller: DEVEditorBundle:Editor:uploadDoc }
 
 dev_editor_list_news:
     path:     /editor/list/actu
@@ -18,6 +22,10 @@ dev_editor_list_articles:
     path:     /editor/list/articles
     defaults: { _controller: DEVEditorBundle:Editor:listArticle }
     
+dev_editor_list_doc:
+    path:     /editor/list/document
+    defaults: { _controller: DEVEditorBundle:Editor:listDoc }
+    
 dev_editor_suppr_news:
     path:     /editor/suppr/actu/{id}
     defaults: { _controller: DEVEditorBundle:Editor:delActu }
@@ -25,3 +33,7 @@ dev_editor_suppr_news:
 dev_editor_suppr_article:
     path:     /editor/suppr/article/{id}
     defaults: { _controller: DEVEditorBundle:Editor:delArticle }
+    
+dev_editor_suppr_doc:
+    path:     /editor/suppr/doc/{id}
+    defaults: { _controller: DEVEditorBundle:Editor:delDoc }

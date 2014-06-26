@@ -39,6 +39,13 @@ class MainController extends Controller {
 		return $this -> render('DEVMainBundle:Main:technique.html.twig', array('articles'=>$articles));
 	}
 	
+	public function docAction(){
+		//récupération des documents
+		$repository = $this -> getDoctrine() -> getManager() -> getRepository('DEVMainBundle:Document');
+		$documents = $repository ->findAll();
+		return $this -> render('DEVMainBundle:Main:document.html.twig', array('docs'=>$documents));
+	}
+	
 	public function displayActuAction($id){
 		$repository = $this -> getDoctrine() -> getManager() -> getRepository('DEVMainBundle:Actu');
 		$actu = $repository -> find($id);

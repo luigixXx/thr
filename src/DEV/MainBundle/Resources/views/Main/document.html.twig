@@ -1,0 +1,35 @@
+{% extends "DEVMainBundle::layout.html.twig" %}
+
+{% block title%}{{ parent() }} Scoutisme{% endblock%}
+
+{%block body%}
+<div class="col-md-8">
+	<div class="well-thr">
+		<legend>
+			Les documents administratifs
+		</legend>
+		<table class="table">
+			{%for doc in docs%}
+			<tr>
+				<td><a href="{{asset(doc.webpath)}}"><i class="glyphicon glyphicon-download"></i> {{doc.nom}}</a></td>
+			</tr>
+			{%endfor%}
+		</table>
+	</div>
+</div>
+<script>
+	$(".fcbox").fancybox({
+		'hideOnContentClick' : true,
+		'padding' : 0,
+		'overlayColor' : '#D3D3D3',
+		'transitionIn' : 'elastic',
+		'transitionOut' : 'elastic',
+		'overlayOpacity' : 0.7,
+		'zoomSpeedIn' : 300,
+		'zoomSpeedOut' : 300,
+		'width' : 950,
+		'height' : 600,
+		'type' : 'iframe'
+	}); 
+</script>
+{%endblock%}
