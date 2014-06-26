@@ -10,7 +10,7 @@
 		</legend>
 		<table class="table">
 			{%for actu in actus %}
-			<tr class="click">
+			<tr class="click fcbox" href="{{path('dev_main_view_actu',{'id':actu.id})}}?iframe">
 				<td>{{actu.titre}}</td>
 				<td>{{actu.datemod|date('d-m-Y')}}</td>
 			</tr>
@@ -50,8 +50,21 @@
 	</div>
 </div>
 <script>
+	$(".fcbox").fancybox({
+		'hideOnContentClick' : true,
+		'padding' : 0,
+		'overlayColor' : '#D3D3D3',
+		'transitionIn' : 'elastic',
+		'transitionOut' : 'elastic',
+		'overlayOpacity' : 0.7,
+		'zoomSpeedIn' : 300,
+		'zoomSpeedOut' : 300,
+		'width' : 950,
+		'height' : 600,
+		'type' : 'iframe'
+	}); 
 	jQuery('.carousel').carousel({
 		interval : 5000
-	});
+	}); 
 </script>
 {%endblock%}

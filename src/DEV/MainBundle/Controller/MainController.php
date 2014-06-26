@@ -14,7 +14,13 @@ class MainController extends Controller {
 	}
 
 	public function scoutismeAction() {
-		return $this -> render('DEVMainBundle:Main:index.html.twig');
+		return $this -> render('DEVMainBundle:Main:scoutisme.html.twig');
+	}
+	
+	public function displayActuAction($id){
+		$repository = $this -> getDoctrine() -> getManager() -> getRepository('DEVMainBundle:Actu');
+		$actu = $repository -> find($id);
+		return $this -> render('DEVMainBundle:Main:actu.html.twig', array('actu'=>$actu));
 	}
 
 }

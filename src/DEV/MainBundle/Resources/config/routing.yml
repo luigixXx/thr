@@ -7,3 +7,9 @@ dev_main_homepage:
 dev_main_scoutismepage:
     pattern:  /scoutisme
     defaults: { _controller: DEVMainBundle:Main:scoutisme }
+    
+dev_main_view_actu:
+    pattern:  /view/actu/{id}
+    defaults: { _controller: DEVMainBundle:Main:displayActu }
+    options:
+        expose:   true
