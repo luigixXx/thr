@@ -1,0 +1,7 @@
+dev_media_homepage:
+    path:     /media
+    defaults: { _controller: DEVMediaBundle:Media:index }
+    
+dev_media_album:
+    path:     /media/album/{id}
+    defaults: { _controller: DEVMediaBundle:Media:getPhotosAlbum }

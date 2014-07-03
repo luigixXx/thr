@@ -1,0 +1,7 @@
+parameters:
+#    dev_media.example.class: DEV\MediaBundle\Example
+
+services:
+#    dev_media.example:
+#        class: %dev_media.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

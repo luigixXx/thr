@@ -1,0 +1,35 @@
+{% extends "DEVMainBundle::layout.html.twig" %}
+
+{% block title%}{{ parent() }} Accueil{% endblock%}
+
+{%block body%}
+<div>
+	{{dump(data.photoset.photo)}}
+	{%for alb in data.photoset.photo%}
+	<div class=" row-fluid text-center">
+
+		<div class="col-md-2">
+
+			<a class="fcbox" href="https://farm{{alb.farm}}.staticflickr.com/{{alb.server}}/{{alb.id}}_{{alb.secret}}_b.jpg?iframe"><img src="https://farm{{alb.farm}}.staticflickr.com/{{alb.server}}/{{alb.id}}_{{alb.secret}}_q.jpg" /> </a>
+		</div>
+
+	</div>
+	{%endfor%}
+
+</div>
+<script>
+	$(".fcbox").fancybox({
+		'hideOnContentClick' : true,
+		'padding' : 0,
+		'overlayColor' : '#D3D3D3',
+		'transitionIn' : 'elastic',
+		'transitionOut' : 'elastic',
+		'overlayOpacity' : 0.7,
+		'zoomSpeedIn' : 300,
+		'zoomSpeedOut' : 300,
+		'width' : 950,
+		'height' : 600,
+		'type' : 'iframe'
+	}); 
+</script>
+{%endblock%}

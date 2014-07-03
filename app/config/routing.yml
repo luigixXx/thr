@@ -1,3 +1,7 @@
+dev_media:
+    resource: "@DEVMediaBundle/Resources/config/routing.yml"
+    prefix:   /
+
 dev_editor:
     resource: "@DEVEditorBundle/Resources/config/routing.yml"
     prefix:   /
