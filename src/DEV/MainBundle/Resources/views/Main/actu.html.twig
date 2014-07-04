@@ -1,38 +1,43 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>{% block title %}GHR - {% endblock %}</title>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Description" content="Les actualités du groupe">
+<meta name="Keywords" content="Actualités, News, Infos">
+<meta name="Subject" content="Les Actualités">
+<meta name="Revisit-After" content="15 days">
+<meta name="Robots" content="all">
+<meta name="Rating" content="general">
+<meta name="Distribution" content="global">
+<meta name="Category" content="sports"
+	<title>{% block title %}{% endblock %}</title>
 		{% block stylesheets %}
 		<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css" />
-		<link rel="stylesheet" href="{{ asset('fancybox/jquery.fancybox.css') }}" type="text/css" />
+	<link rel="stylesheet" href="{{ asset('fancybox/jquery.fancybox.css') }}" type="text/css" />
 		{% endblock %}
 		<script src="{{ asset('js/jquery-1.9.1.js') }}"></script>
-		<script src="{{ asset('js/jquery-ui-1.10.3.custom.min.js') }}"></script>
-		<script src="{{ asset('js/jquery.ui.touch-punch.min.js') }}"></script>
-		<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-		<script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
-		<script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
-		<script src="{{ asset('js/highcharts/highcharts.js') }}"></script>
-		<script src="{{ asset('js/highcharts/exporting.js') }}"></script>
-		<script src="{{ asset('js/highcharts/grid.js') }}"></script>
-		<script src="{{ asset('js/jquery.mmenu.js')}}"></script>
-		<script src="{{ asset('fancybox/jquery.fancybox.js')}}"></script>
-
-	</head>
-	<body>
-		<div style="padding: 3px" id="ctn">
-			<legend class="text-center">
-				{{actu.titre}}
-			</legend>
-			{{actu.content | raw}}
-		</div>
-		<script>
-			$(document).ready(function loop() {
-				$('#ctn img').each(function() {
-					$(this).css("margin", '10px');
-				});
+	<script src="{{ asset('js/jquery-ui-1.10.3.custom.min.js') }}"></script>
+	<script src="{{ asset('js/jquery.ui.touch-punch.min.js') }}"></script>
+	<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+	<script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+	<script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+	<script src="{{ asset('js/highcharts/highcharts.js') }}"></script>
+	<script src="{{ asset('js/highcharts/exporting.js') }}"></script>
+	<script src="{{ asset('js/highcharts/grid.js') }}"></script>
+	<script src="{{ asset('js/jquery.mmenu.js')}}"></script>
+	<script src="{{ asset('fancybox/jquery.fancybox.js')}}"></script>
+</head>
+<body>
+	<div style="padding: 3px" id="ctn">
+		<legend class="text-center"> {{actu.titre}} </legend>
+		{{actu.content | raw}}
+	</div>
+	<script>
+		$(document).ready(function loop() {
+			$('#ctn img').each(function() {
+				$(this).css("margin", '10px');
 			});
-		</script>
-	</body>
+		});
+	</script>
+</body>
 </html>

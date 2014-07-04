@@ -1,8 +1,21 @@
 {% extends "DEVMainBundle::layout.html.twig" %}
-
+{% block meta %}
+<meta name="Description" content="Les articles qui concernent le scoutisme">
+<meta name="Keywords" content="Scoutisme, l'histoire du scoutisme, l'histoire dur Groupe Henri de larochejaquelein, Baden Powell, Père Sevin">
+<meta name="Subject" content="Le Scoutisme en générale">
+<meta name="Revisit-After" content="15 days">
+<meta name="Robots" content="all">
+<meta name="Rating" content="general">
+<meta name="Distribution" content="global">
+<meta name="Category" content="sports">
+{% endblock %}
 {% block title%}{{ parent() }} Scoutisme{% endblock%}
 
 {%block body%}
+<ol class="breadcrumb">
+  <li><a href="{{path('dev_main_homepage')}}">Accueil</a></li>
+  <li>Scoutisme</li>
+</ol>
 <div class="col-md-8">
 	<div class="well-thr">
 		<legend>

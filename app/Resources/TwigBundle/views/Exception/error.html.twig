@@ -1,0 +1,22 @@
+{% extends "DEVMainBundle::layout.html.twig" %}
+
+{% block title%}{{ parent() }} Erreur {{ status_code }}{% endblock%}
+
+{%block body%}
+<div class="row">
+	<div class="col-md-8 text-center">
+		{% if status_code == '404' %}
+		<legend class="text-center">
+			La Page n'existe pas!!
+		</legend>
+		{%endif%}
+		
+		{% if status_code == '500' %}
+		<legend class="text-center">
+			Erreur sur le serveur! si l'erreur persist contacter le support technique!
+		</legend>
+		{%endif%}
+		Message d'erreur : "{{ status_code }} {{ status_text }}".
+	</div>
+</div>
+{%endblock%}

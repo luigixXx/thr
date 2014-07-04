@@ -1,8 +1,21 @@
 {% extends "DEVMainBundle::layout.html.twig" %}
 
 {% block title%}{{ parent() }} Scoutisme{% endblock%}
-
+{% block meta %}
+<meta name="Description" content="Les articles qui concernent les techniques scouts">
+<meta name="Keywords" content="Techniques et tout ce qui est à savoir pour être scout, guide ou parent de scout">
+<meta name="Subject" content="Les techniques scouts en générale">
+<meta name="Revisit-After" content="15 days">
+<meta name="Robots" content="all">
+<meta name="Rating" content="general">
+<meta name="Distribution" content="global">
+<meta name="Category" content="sports">
+{%endblock%}
 {%block body%}
+<ol class="breadcrumb">
+  <li><a href="{{path('dev_main_homepage')}}">Accueil</a></li>
+  <li>Technique</li>
+</ol>
 <div class="col-md-8">
 	<div class="well-thr">
 		<legend>

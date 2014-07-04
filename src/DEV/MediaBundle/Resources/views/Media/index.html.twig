@@ -1,17 +1,19 @@
-{% extends "DEVMainBundle::layout.html.twig" %}
-
-{% block title%}{{ parent() }} Accueil{% endblock%}
-
-{%block body%}
+{% extends "DEVMainBundle::layout.html.twig" %} {% block title%}{{
+parent() }} Accueil{% endblock%} {%block body%}
+<ol class="breadcrumb">
+	<li><a href="{{path('dev_main_homepage')}}">Accueil</a></li>
+	<li>Photos & Vidéos</li>
+</ol>
 <div>
 	{%for alb in data.photosets.photoset %}
 	<div class=" row-fluid text-center">
-		
 		<div class="col-md-2">
-		{{alb.title._content}}
-		<a target="_blank" href="https://www.flickr.com/photos/125759822@N05/sets/{{alb.id}}/show"><img src="https://farm{{alb.farm}}.staticflickr.com/{{alb.server}}/{{alb.primary}}_{{alb.secret}}_q.jpg" /> </a>
+			{{alb.title._content}} <a target="_blank"
+				href="https://www.flickr.com/photos/125759822@N05/sets/{{alb.id}}/show"><img
+				src="https://farm{{alb.farm}}.staticflickr.com/{{alb.server}}/{{alb.primary}}_{{alb.secret}}_q.jpg" />
+			</a>
 		</div>
-		
+
 	</div>
 	{%endfor%}
 </div>

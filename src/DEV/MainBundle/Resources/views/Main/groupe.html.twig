@@ -1,8 +1,21 @@
 {% extends "DEVMainBundle::layout.html.twig" %}
 
 {% block title%}{{ parent() }} Scoutisme{% endblock%}
-
+{% block meta %}
+<meta name="Description" content="Les articles qui concernent le groupe henri de larochejaquelein">
+<meta name="Keywords" content="L'histoire et les événements marquant du groupe henri de la rochejaquelein. Les particularités du groupe">
+<meta name="Subject" content="Le Scoutisme en générale">
+<meta name="Revisit-After" content="15 days">
+<meta name="Robots" content="all">
+<meta name="Rating" content="general">
+<meta name="Distribution" content="global">
+<meta name="Category" content="sports">
+{% endblock %}
 {%block body%}
+<ol class="breadcrumb">
+  <li><a href="{{path('dev_main_homepage')}}">Accueil</a></li>
+  <li>Groupe</li>
+</ol>
 <div class="col-md-8">
 	<div class="well-thr">
 		<legend>

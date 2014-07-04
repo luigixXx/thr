@@ -27,13 +27,18 @@ body{
 }
 .topbar {
 	background-color:rgb(35,105,11);
-	height: 12%;
 	
+	
+}
+
+.croix{
+	max-height:60px;
+	max-width:60px;
 }
 
 .footbar {
 	background-color:rgb(35,105,11);
-	
+	color:white;
 }
 
 .leftbar {
